@@ -1,0 +1,87 @@
+.container {
+    max-width: 360px;
+    padding: 15px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 5px 5px rgba(153,153,153,1);
+    border-radius: 1.5%;
+    background-color: skyblue;
+    font-family: sans-serif;
+}
+
+/* title bar */
+/* #title {
+    background-color: orange;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    height: 65px;
+    line-height: 65px;
+    padding: 16px 8px;
+    font-size: 45px;
+} */
+
+/* display bar */
+#display {
+    background-color: white;
+    text-align: right;
+    margin: 4px auto 8px;
+    padding: 100000px;
+    height: 85px;
+    line-height: 75px;
+    padding: 16px 16px;
+    font-size: 60px;
+    /* box-shadow: inset 0 0 10px #000000; */
+    border-radius: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button {
+    border-top: 1px solid #999;
+    border-right: 1px solid#999;
+    margin: 10px 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 0.5px solid #999;
+    height: 80px;
+    padding-top: 1%;
+    text-align: center;
+    font-size: 32px;
+    cursor: pointer;
+    color: #3e00b7;
+}
+
+.button:hover {
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+
+/* Alphabets */
+.button > span{
+    position: relative;
+    color: grey;
+    font-size: 0.8rem;
+    height: 50%;
+}
+/* centering */
+.center-align{
+    line-height: 75px;
+}
+
+/* Special Buttons */
+#back-icon{
+    color: black;
+}
+
+#star-icon{
+    color: black;
+}
+
+#call-icon{
+    background-color: green;
+    border-radius: 50%;
+    color: white;
+}
