@@ -2,6 +2,7 @@ let display = document.getElementById('display');
 let buttons = Array.from(document.getElementsByClassName('button'));
 buttons.map( button => {
     button.addEventListener('click', (e) => {
+        let l = display.innerText.length;
         if(e.target.id == 'back-icon'){
             if (display.innerText){
                 display.innerText = display.innerText.slice(0, -1);
@@ -12,6 +13,9 @@ buttons.map( button => {
         }
         else if(e.target.id == 'call-icon'){
             console.log('Call Button Clicked!');
+        }
+        else if(l == 10){
+            return;
         }
         else {
             let currentButtonText = e.target.innerText;
